@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+@import url(http://fonts.googleapis.com/css?family=Playball&subset=latin,latin-ext);
+
+@import url('colors/color-gold.css');
+
+/* common */
+main .grey-section {
+  background: #d0c7d4;
+}
+main .footer-1 {
+  background: #2f4e48;
+}
+main .footer-1 p {
+  text-align: center;
+  text-transform: none;
+}
+main .scroll-to-top {
+  bottom: 42px;
+}
+
+/* index */
+.aboutme .header_index {
+  width: 100%;
+  height: 50px;
+  background: rgba(208, 199, 212, 0.7);
+  z-index: 100;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.aboutme .header_logo img {
+  display: block;
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 5%;
+}
+.aboutme .section_top {
+  width: 100%;
+  height: 85vh;
+  /* height: 0; */
+  /* padding-bottom: 60%; */
+  margin-top: -50px;
+  /* padding: 350px 0; */
+}
+.aboutme .section_top .parallax-about {
+  background: url(../images/blog/blog-2.jpg) repeat fixed;
+  /* background: url(../images/parallax/about-me.jpg) repeat fixed; */
+  background-size: cover;
+  background-position: center !important;
+}
+.aboutme .section_introduction {
+  padding: 80px 0;
+}
+.aboutme .section_introduction .container {
+  width: 800px;
+}
+.aboutme .section_introduction .intro_box01 {
+  width: 40%;
+}
+.aboutme .section_introduction .intro_box02 {
+  width: 55%;
+}
+.aboutme .section_introduction .borderLeft {
+  border-left: 5px solid #d0c7d4;
+  padding-left: 20px;
+}
+.aboutme .section_introduction .intro_box01 .item:first-child {
+  margin-bottom: 40px;
+}
+.aboutme .text-in-bar {
+  background: #cfa144;
+}
+.aboutme .arrow-skills {
+  border-right: 7px solid #cfa144;
+}
+.aboutme .pro-bar-container {
+  background: #2f4e48;
+}
+
+/* project */
+.goback {
+  color: #666666;
+}
