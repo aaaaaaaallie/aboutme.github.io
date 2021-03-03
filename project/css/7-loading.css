@@ -1,0 +1,178 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E55A54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "微軟正黑體";
+}
+
+.pageLoading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0C4475;
+  flex-direction: column;
+  transition: opacity 0.5s 0.5s;
+}
+.pageLoading.complete {
+  opacity: 0;
+}
+.pageLoading.complete .monster {
+  -webkit-transform: scale(0.01) rotate(360deg);
+          transform: scale(0.01) rotate(360deg);
+}
+
+.monster {
+  width: 110px;
+  height: 110px;
+  background-color: #E55A54;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  -webkit-animation: jumping 0.8s infinite alternate;
+          animation: jumping 0.8s infinite alternate;
+}
+.monster .eye {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monster .eyeball {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #0C4475;
+}
+.monster .mouth {
+  width: 32%;
+  height: 12px;
+  border-radius: 12px;
+  background-color: white;
+  margin-top: 15%;
+}
+.monster:before, .monster:after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: -10px;
+}
+.monster:before {
+  -webkit-transform: translateX(-70%) rotate(45deg);
+          transform: translateX(-70%) rotate(45deg);
+}
+.monster:after {
+  -webkit-transform: translateX(-30%) rotate(-45deg);
+          transform: translateX(-30%) rotate(-45deg);
+}
+.monster, .monster * {
+  transition: 0.5s;
+}
+.monster.blue {
+  background-color: #0C4475;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.monster.blue .mouth, .monster.blue .eyeball {
+  background-color: #E55A54;
+}
+@-webkit-keyframes jumping {
+  50% {
+    top: 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    top: -50px;
+    box-shadow: 0px 120px 50px rgba(0, 0, 0, 0.2);
+  }
+}
+@keyframes jumping {
+  50% {
+    top: 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    top: -50px;
+    box-shadow: 0px 120px 50px rgba(0, 0, 0, 0.2);
+  }
+}
+@-webkit-keyframes eyemove {
+  0%,10% {
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+  }
+  90%,100% {
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+@keyframes eyemove {
+  0%,10% {
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+  }
+  90%,100% {
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+.monster .eyeball {
+  -webkit-animation: eyemove 1.6s infinite alternate;
+          animation: eyemove 1.6s infinite alternate;
+}
+
+.loading {
+  width: 200px;
+  height: 8px;
+  margin-top: 80px;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.loading .bar {
+  background-color: #E55A54;
+  width: 0%;
+  height: 100%;
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+  margin-right: 50px;
+}
+
+h3 {
+  margin-top: 0;
+  opacity: 0.5;
+  color: white;
+}
