@@ -84,6 +84,47 @@ main .scroll-to-top {
 }
 
 /* project */
-.goback {
-  color: #666666;
+.project_main .container .eleven.columns {
+  width: 800px;
+}
+.project_main .container .five.columns {
+  width: 360px;
+}
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .project_main .container .eleven.columns {
+    width: 600px;
+  }
+  .project_main .container .five.columns {
+    width: 310px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .project_main .container .eleven.columns {
+    float: none;
+    width: 90%;
+  }
+  .project_main .container .five.columns {
+    width: 100%;
+    margin: 10px auto 0 auto;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .project_main .container .eleven.columns {
+    float: none;
+    width: 90%;
+  }
+  .project_main .container .five.columns {
+    width: 100%;
+    margin: 10px auto 0 auto;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .project_main .container .eleven.columns {
+    float: none;
+    width: 90%;
+  }
+  .project_main .container .five.columns {
+    width: 100%;
+    margin: 10px auto 0 auto;
+  }
 }
