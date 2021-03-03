@@ -60,12 +60,82 @@ main .scroll-to-top {
 .aboutme .section_introduction .container {
   width: 800px;
 }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .aboutme .section_introduction .container {
+    width: 768px;
+  }
+  .aboutme .section_introduction .intro_box01 {
+    width: 39%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .aboutme .section_introduction .container {
+    width: 420px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .aboutme .section_introduction .container.container {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .aboutme .section_introduction .container {
+    width: 220px;
+  }
+}
+
 .aboutme .section_introduction .intro_box01 {
   width: 40%;
 }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .aboutme .section_introduction .intro_box01 {
+    width: 39%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .aboutme .section_introduction .intro_box01 {
+    width: 100%;
+  }
+  .section_introduction .page-top-text {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .aboutme .section_introduction .intro_box01 {
+    width: 100%;
+  }
+  .section_introduction .page-top-text {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .aboutme .section_introduction .intro_box01 {
+    width: 100%;
+  }
+  .section_introduction .page-top-text {
+    text-align: left;
+  }
+}
+
 .aboutme .section_introduction .intro_box02 {
   width: 55%;
 }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .aboutme .section_introduction .intro_box02 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .aboutme .section_introduction .intro_box02 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .aboutme .section_introduction .intro_box02 {
+    width: 100%;
+  }
+}
+
 .aboutme .section_introduction .borderLeft {
   border-left: 5px solid #d0c7d4;
   padding-left: 20px;
