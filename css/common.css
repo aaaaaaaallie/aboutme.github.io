@@ -91,6 +91,9 @@ main .scroll-to-top {
   .aboutme .section_introduction .intro_box01 {
     width: 39%;
   }
+  .section_introduction .page-top-text {
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .aboutme .section_introduction .intro_box01 {
