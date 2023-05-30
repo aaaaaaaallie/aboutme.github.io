@@ -25,7 +25,7 @@ main .scroll-to-top {
 /* index */
 .aboutme .header_index {
   width: 100%;
-  height: 50px;
+  height: 70px;
   background: rgba(208, 199, 212, 0.7);
   z-index: 100;
   position: absolute;
@@ -42,15 +42,16 @@ main .scroll-to-top {
 }
 .aboutme .section_top {
   width: 100%;
-  height: 85vh;
+  height: 80vh;
   /* height: 0; */
   /* padding-bottom: 60%; */
   margin-top: -50px;
   /* padding: 350px 0; */
 }
 .aboutme .section_top .parallax-about {
-  background: url(../images/blog/blog-2.jpg) repeat fixed;
+  background: url(../images/blog/blog-3.jpg) repeat fixed;
   /* background: url(../images/parallax/about-me.jpg) repeat fixed; */
+  /* background-color: #2f4e48; */
   background-size: cover;
   background-position: center !important;
 }
@@ -60,85 +61,12 @@ main .scroll-to-top {
 .aboutme .section_introduction .container {
   width: 800px;
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .aboutme .section_introduction .container {
-    width: 768px;
-  }
-  .aboutme .section_introduction .intro_box01 {
-    width: 39%;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .aboutme .section_introduction .container {
-    width: 420px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .aboutme .section_introduction .container.container {
-    width: 300px;
-  }
-}
-@media only screen and (max-width: 319px) {
-  .aboutme .section_introduction .container {
-    width: 220px;
-  }
-}
-
 .aboutme .section_introduction .intro_box01 {
   width: 40%;
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .aboutme .section_introduction .intro_box01 {
-    width: 39%;
-  }
-  .section_introduction .page-top-text {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .aboutme .section_introduction .intro_box01 {
-    width: 100%;
-  }
-  .section_introduction .page-top-text {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .aboutme .section_introduction .intro_box01 {
-    width: 100%;
-  }
-  .section_introduction .page-top-text {
-    text-align: left;
-  }
-}
-@media only screen and (max-width: 319px) {
-  .aboutme .section_introduction .intro_box01 {
-    width: 100%;
-  }
-  .section_introduction .page-top-text {
-    text-align: left;
-  }
-}
-
 .aboutme .section_introduction .intro_box02 {
   width: 55%;
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .aboutme .section_introduction .intro_box02 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .aboutme .section_introduction .intro_box02 {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 319px) {
-  .aboutme .section_introduction .intro_box02 {
-    width: 100%;
-  }
-}
-
 .aboutme .section_introduction .borderLeft {
   border-left: 5px solid #d0c7d4;
   padding-left: 20px;
@@ -157,47 +85,6 @@ main .scroll-to-top {
 }
 
 /* project */
-.project_main .container .eleven.columns {
-  width: 800px;
-}
-.project_main .container .five.columns {
-  width: 360px;
-}
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
-  .project_main .container .eleven.columns {
-    width: 600px;
-  }
-  .project_main .container .five.columns {
-    width: 310px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .project_main .container .eleven.columns {
-    float: none;
-    width: 90%;
-  }
-  .project_main .container .five.columns {
-    width: 100%;
-    margin: 10px auto 0 auto;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .project_main .container .eleven.columns {
-    float: none;
-    width: 90%;
-  }
-  .project_main .container .five.columns {
-    width: 100%;
-    margin: 10px auto 0 auto;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .project_main .container .eleven.columns {
-    float: none;
-    width: 90%;
-  }
-  .project_main .container .five.columns {
-    width: 100%;
-    margin: 10px auto 0 auto;
-  }
+.goback {
+  color: #666666;
 }

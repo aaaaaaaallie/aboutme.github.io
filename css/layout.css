@@ -7511,7 +7511,7 @@ Main components
 }
 
 .parallax-about {
-	background: url('../images/parallax/wall-top.jpg') repeat fixed;
+	/* background: url('../images/parallax/wall-top.jpg') repeat fixed; */
 	background-size: cover;
 	position: absolute;
 	top: 0; 
