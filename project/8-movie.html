@@ -1,40 +1,25 @@
 ﻿<!DOCTYPE html>
-<head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
+<head>
+	<!-- Basic Page Needs -->
 	<meta charset="utf-8">
 	<title>AAAAAAAAllie movie</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="css/8-movie.css"/>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/8-movie.css" />
 
-
-
-	
-
-<!-- Favicons
-	================================================== -->
+	<!-- Favicons -->
 	<link rel="shortcut icon" href="favicon.png">
-
-
-
-
-
 </head>
-<body>	
-	<!-- Primary Page Layout
-	================================================== -->	
 
-
+<body>
+	<!-- Primary Page Layout -->
 	<div id="app" :class="{isCartOpen: isCartOpen}">
 		<div class="apptitle">Vue.js Theater</div>
 		<div class="movie" @wheel.prevent="wheel($event)">
-			<div class="cards"> 
+			<div class="cards">
 				<div class="card fadeIn animated" v-for="movie in movies">
 					<div class="left zoomIn animated">
 						<div class="cover" :style="bgcss(movie.cover)"></div>
@@ -63,29 +48,27 @@
 							<div class="remove" @click="cart.splice(mid,1)">-</div>
 						</h3>
 					</li>
-					<li v-if="!cart.length"> 
+					<li v-if="!cart.length">
 						<h3>Your cart is empty! :(</h3>
 					</li>
 				</ul>
-				<hr/>
+				<hr />
 				<h2>{{totalPrice}}$</h2>
 			</div>
 		</div>
 		<div class="buybox" v-if="currentMovie" :style="bgcss(currentMovie &amp;&amp; currentMovie.cover)"></div>
 	</div>
 
-<!-- End Document
-================================================== -->
+	<!-- End Document -->
 
-<!-- JAVASCRIPT
-    ================================================== -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
-		<script type="text/javascript" src="js/8-movie.js"></script>
-		
-		
+	<!-- JAVASCRIPT -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+	<script type="text/javascript" src="js/8-movie.js"></script>
+
 </body>
+
 </html>
