@@ -25,21 +25,43 @@ main .scroll-to-top {
 /* index */
 .aboutme .header_index {
   width: 100%;
-  height: 70px;
-  background: rgba(208, 199, 212, 0.7);
+  height: 100px;
+  background: rgba(0, 0, 0, 0.8);
   z-index: 100;
-  position: absolute;
+  /* position: absolute;
   top: 50px;
-  left: 0;
+  left: 0; */
+
+  position: fixed;
+  z-index: 999;
 }
-.aboutme .header_logo img {
+.aboutme .header_index header {
+  padding: 50px 0 50px 10px;
+}
+
+.aboutme .header_index a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.aboutme .header_index span {
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  padding-left: 8px;
+  color: #eee;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* .aboutme .header_logo img {
   display: block;
   width: 90px;
   height: auto;
   position: absolute;
   top: 10px;
   left: 5%;
-}
+} */
 .aboutme .section_top {
   width: 100%;
   height: 80vh;
@@ -49,23 +71,48 @@ main .scroll-to-top {
   /* padding: 350px 0; */
 }
 .aboutme .section_top .parallax-about {
-  background: url(../images/blog/blog-3.jpg) repeat fixed;
+  background: url(../images/blog/bg-1.jpg) repeat fixed;
   /* background: url(../images/parallax/about-me.jpg) repeat fixed; */
   /* background-color: #2f4e48; */
   background-size: cover;
   background-position: center !important;
 }
 .aboutme .section_introduction {
-  padding: 80px 0;
+  padding: 70px 0;
 }
 .aboutme .section_introduction .container {
   width: 800px;
 }
+.aboutme .intro_group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 900px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .aboutme .intro_group {
+    display: block;
+    width: 90%;
+    text-align: left;
+  }
+}
 .aboutme .section_introduction .intro_box01 {
   width: 40%;
 }
+@media screen and (max-width: 900px) {
+  .aboutme .section_introduction .intro_box01 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
 .aboutme .section_introduction .intro_box02 {
-  width: 55%;
+  width: 60%;
+}
+@media screen and (max-width: 900px) {
+  .aboutme .section_introduction .intro_box02 {
+    width: 100%;
+  }
 }
 .aboutme .section_introduction .borderLeft {
   border-left: 5px solid #d0c7d4;
@@ -84,7 +131,29 @@ main .scroll-to-top {
   background: #2f4e48;
 }
 
+/* skills */
+.section_skills .skills-in-box {
+  width: 900px;
+  border-radius: 5px;
+  margin: auto;
+}
+@media screen and (max-width: 900px) {
+  .section_skills .skills-in-box {
+    width: 90%;
+  }
+}
+
 /* project */
+.section_projects h3 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .section_projects .section-title {
+    margin-top: -10px;
+  }
+}
+
 .goback {
   color: #666666;
 }
